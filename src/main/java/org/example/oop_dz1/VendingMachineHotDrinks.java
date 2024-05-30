@@ -15,6 +15,7 @@ public class VendingMachineHotDrinks implements VendingMachine {
         this.hotDrinkWithTemperatureList = hotDrinkWithTemperatureList;
     }
 
+
     /**
      * Получение напитка из автомата
      *

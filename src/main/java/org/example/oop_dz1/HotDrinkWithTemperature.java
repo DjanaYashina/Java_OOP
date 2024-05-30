@@ -1,7 +1,6 @@
 package org.example.oop_dz1;
 
 public class HotDrinkWithTemperature extends HotDrink{
-
     private int temperature;
 
     public HotDrinkWithTemperature(String name, int volume, int temperature){

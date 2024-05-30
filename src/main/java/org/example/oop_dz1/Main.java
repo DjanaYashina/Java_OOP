@@ -15,7 +15,6 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-
         VendingMachineHotDrinks vmHotDrinks = new VendingMachineHotDrinks();
         List<HotDrink> hotDrinksList = new ArrayList<>(Arrays.asList(
                 new HotDrink("Капучино", 200),
