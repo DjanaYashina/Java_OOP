@@ -22,7 +22,4 @@ public class Controller {
     }
 
 
-//    public void sortStreams(List<Stream> streams) {
-//        streamService.sortStreams(streams);
-//    }
 }

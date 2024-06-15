@@ -1,4 +1,4 @@
-package org.example.oop_dz3;
+package org.example.oop_dz4;
 
 import java.util.Comparator;
 

@@ -22,26 +22,4 @@ public class Main {
 
     }
 
-//        List<Student> list = new ArrayList<>(Arrays.asList(
-//                new Student(1L, "Иванов", "Иван", "Иванович"),
-//                new Student(2L, "Петров", "Петр", "Петрович"),
-//                new Student(3L, "Сергеев", "Сергей", "Сергеевич")
-//        ));
-//        System.out.println(list);
-//        Collections.sort(list);
-//
-//        list.sort(new StudentComparator());
-//
-//        StudentGroup studentGroup = new StudentGroup(list);
-//        for (Student student : studentGroup) {
-//            System.out.println(student);
-//        }
-//    }
-//
-//    public static void Iterator(StudentGroup studentGroup){
-//        StudentGroupIterator groupIterator = new StudentGroupIterator(studentGroup);
-//        while (groupIterator.hasNext()){
-//            System.out.println(groupIterator.next());
-//        }
-//    }
 }
