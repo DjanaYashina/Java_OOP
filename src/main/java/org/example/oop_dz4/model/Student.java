@@ -1,24 +1,20 @@
-package org.example.oop_dz4;
+package org.example.oop_dz4.model;
 
 public class Student extends User implements Comparable<Student> {
-    private Long studentID;
+    private final long studentID;
 
     public Student(Long studentID, String firstName, String lastName, String middleName) {
         super(firstName, lastName, middleName);
         this.studentID = studentID;
     }
-
-    public Long getStudentID() {
+    @Override
+    public long getID() {
         return studentID;
-    }
-
-    public void setStudentID(Long studentID) {
-        this.studentID = studentID;
     }
 
     @Override
     public int compareTo(Student o) {
-        return this.studentID.compareTo(o.studentID);
+        return Long.compare(studentID, o.getID());
     }
     @Override
     public String toString() {

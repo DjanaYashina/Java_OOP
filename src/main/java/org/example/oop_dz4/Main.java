@@ -1,19 +1,26 @@
 package org.example.oop_dz4;
 
-import java.util.List;
+import org.example.oop_dz4.controller.StudentController;
+import org.example.oop_dz4.controller.UserController;
+import org.example.oop_dz4.model.Student;
+import org.example.oop_dz4.model.User;
+
 
 public class Main {
     public static void main(String[] args) {
-        TeacherController teacherController = new TeacherController();
-        teacherController.create("Ivanov", "Ivan", "Ivanovich");
-        teacherController.create("Sidorov", "Ivan", "Petrovich");
-        teacherController.create("Petrova", "Ilona", "Ivanovna");
-        teacherController.create("Rusov", "Oleg", "Sergeevich");
-        List<Teacher> teacherList = teacherController.getTeacherList();
-        Teacher teacher = teacherList.get(2);
-        teacherController.edit(teacher.getTeacherID(),"Shuvalova","Ilona", "Ivanovna");
+
+        // Переменная userController определяется только один раз при создании,
+        // а остальной код универсален
+        UserController<Student> userController = new StudentController();
+        //UserController<Teacher> userController = new TeacherController();
+        userController.create("Ivanov", "Ivan", "Ivanovich");
+        userController.create("Sidorov", "Ivan", "Petrovich");
+        userController.create("Petrova", "Ilona", "Ivanovna");
+        userController.create("Rusov", "Oleg", "Sergeevich");
+        User user = userController.getList().get(2);
+        userController.edit(user.getID(),"Shuvalova","Ilona", "Ivanovna");
         System.out.println();
-        teacherController.getTeacherList();
+        userController.getList();
     }
 
 }

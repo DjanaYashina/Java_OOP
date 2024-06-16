@@ -1,4 +1,6 @@
-package org.example.oop_dz4;
+package org.example.oop_dz4.view;
+
+import org.example.oop_dz4.model.User;
 
 import java.util.List;
 

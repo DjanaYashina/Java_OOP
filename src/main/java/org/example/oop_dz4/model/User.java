@@ -1,6 +1,6 @@
-package org.example.oop_dz4;
+package org.example.oop_dz4.model;
 
-public class User {
+public abstract class User {
     private String firstName;
     private String lastName;
     private String middleName;
@@ -34,5 +34,13 @@ public class User {
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
+
+    /**
+     * Класс User теперь абстрактны и может содержать абстрактные методы,
+     * которые будут общими для всех наследников класса User.
+     * метод getId реализован в наследниках класса
+     * @return
+     */
+    public abstract long getID();
 }
 

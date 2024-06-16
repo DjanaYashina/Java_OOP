@@ -1,6 +1,6 @@
 package org.example.oop_dz5.controller;
 
-import org.example.oop_dz4.TeacherView;
+import org.example.oop_dz4.view.TeacherView;
 import org.example.oop_dz5.model.Student;
 import org.example.oop_dz5.model.StudyGroup;
 import org.example.oop_dz5.model.Teacher;

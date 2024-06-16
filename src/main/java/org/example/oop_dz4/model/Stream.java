@@ -1,4 +1,4 @@
-package org.example.oop_dz4;
+package org.example.oop_dz4.model;
 
 import java.util.Iterator;
 import java.util.List;

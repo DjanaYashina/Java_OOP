@@ -1,9 +1,10 @@
-package org.example.oop_dz4;
+package org.example.oop_dz4.model;
 
 import java.util.Random;
 
-public class Teacher extends User{
-    public Long getTeacherID() {
+public class Teacher extends User {
+    @Override
+    public long getID() {
         return teacherID;
     }
 

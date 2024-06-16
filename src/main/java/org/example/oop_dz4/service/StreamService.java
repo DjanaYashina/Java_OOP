@@ -1,10 +1,13 @@
-package org.example.oop_dz4;
+package org.example.oop_dz4.service;
+
+import org.example.oop_dz4.utils.StreamComparator;
+import org.example.oop_dz4.model.Stream;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class StreamService {
-    private List<Stream> streamList;
+    private final List<Stream> streamList = new ArrayList<>();
 
     public List<Stream> getSortedStreamByCount() {
         List<Stream> list = new ArrayList<>(streamList);
